@@ -1,6 +1,7 @@
 const caesar = function(string,shift) {
     newString = string;
     stringArray = [];
+    //for hver karakter, tilføj til starten af en tom array, fordi den kører fra bagerest tegn og frem.
     for (let i = string.length-1; i >= 0; i--) {
         stringArray.unshift(shiftCode(string[i],shift));
     }

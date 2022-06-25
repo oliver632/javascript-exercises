@@ -8,14 +8,8 @@ const subtract = function(num1,num2) {
     return num1 - num2;
 };
 
-const sum = function(...numbers) {
-    //Making a summed variabled called "som" because I don't want it to have same name as function.
-    let som = 0;
-    //for each number in the array, add it to som. Then return it. 
-    for(let i = numbers[0].length-1;i>-1;i--){
-        som += numbers[0][i];
-    };
-    return parseInt(som);
+const sum = function(numbers) {
+    return numbers.reduce((total, number) => total + number,0);
 };
 
 const multiply = function(...numbers) {
